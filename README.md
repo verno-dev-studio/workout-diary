@@ -2,7 +2,7 @@
 
 An interactive workout tracker with map-based route logging.
 
-🔗 **Live demo:** https://pafuluofu.github.io/workout-diary/
+🔗 **Live demo:** https://verno-dev-studio.github.io/workout-diary/
 
 ## Built with
 - **HTML5**
