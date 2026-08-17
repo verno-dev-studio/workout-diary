@@ -38,12 +38,6 @@
 			content="George Pavlov"
 		/>
 
-		<link
-			href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAApItLeKSTX7igj0O4oI9DuKCPQ7igj0O4oI9DuKCPQ7igj0O4oI9DuKSTY7iMcr+4ZF4juIxut7iok2u4pItLeKCLS9Cwl3f8rJNf/KyTX/ysk1/8rJNf/KyTX/ysk1/8rJNf/KyTX/y8n6/8RDlT/CAcn/xsXh/8tJuH/KCLT9Cgj0O4rJNf/KiPS/yoj0v8qI9L/KiPS/yoj1P8qI9T/KiPS/ysj1f8oIsr/DgtE/yoj0P8tJeD/KyTW/ygj0O4oI9DuKyTX/yoj0v8qI9L/KiPS/ywl3f8rJNn/KyPV/ysj1f8tJuH/FRFp/xIPXP8uJub/KiPS/ysk1/8oI9DuKCPQ7isk1/8sJd7/LSbj/y0m4v8hG6T/CQcr/w8NTf8uJuT/MCjv/wgHKf8bFob/LSXh/yoj0v8rJNf/KCPQ7ikj1O4qI9P/GxeI/xYTb/8TEF3/DgxH/xMQX/8AAAD/GBR4/xYSbf8DAg7/JB62/ysk2v8qI9L/KyTX/ygj0O4oI9PuKyTY/yMdsP8TD13/HhmW/y0m4/8tJeH/BgUe/wAAAP8AAAD/GRV9/y0m4/8qI9H/KiPS/ysk1/8oI9DuKCPQ7isk1/8rJNn/LSXh/ywk2v8rJNn/KSLL/wQDFP8AAAD/FRFo/y0m4/8qI9T/KiPS/yoj0v8rJNf/KCPQ7igj0O4rJNf/KiPS/yoj0v8sJd3/HhmV/yAbov8KCDL/AAAA/x4Zl/8xKfT/LCXc/ysj1f8qI9H/KyTX/ygj0O4oI9DuKyTX/yoj0v8qI9L/LCXe/x0YkP8mH7z/FxNy/wAAAP8KCDH/FhJt/xcTcf8iHaz/KyTa/ysk1/8oI9DuKCPQ7isk1/8qI9L/KiPS/y0l3/8cF4r/GRV+/x0Ykf8AAAD/AAAA/wwKPf8aFYH/GRV8/y0m4v8rJNf/KCPQ7igj0O4rJNf/KiPS/yoj0v8rJNb/KCHJ/xAOUv8GBR3/AAAA/wAAAP8RDlb/JB60/xMQXv8tJd//KyTX/ygj0O4oI9DuKyTX/yoj0v8qI9L/KiPR/ysk1/8sJd3/IRyn/xANUf8AAAL/GBR6/yAanv8UEGL/KSLL/ywk2v8oI9DuKCPQ7isk1/8qI9L/KiPS/yoj0v8qI9L/KiPS/y0m4/8pIs3/AAAA/w0LQv8fGpv/Cggy/yIcqv8tJeD/KCPQ7igi0vQsJd3/KyTX/ysk1/8rJNf/KyTX/ysk1/8sJNr/KiPT/xIPXP8dGJP/LSbi/xkVff8oIsr/LSXg/ygi0vQpItLeKSTX7igj0O4oI9DuKCPQ7igj0O4oI9DuKCPP7igj1O4rJuPuKiTa7igj0+4pI9buKCPQ7ikk1u4pItLeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
-			rel="icon"
-			type="image/x-icon"
-		/>
-
 		<script
 			defer
 			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -55,11 +49,25 @@
 			src="js/main.js"
 		></script>
 
-		<title>Workout Diary</title>
-	</head>
+		<title>ATLAS — дневник тренировок на карте</title>
+	
+<style id="custom-scrollbar">
+/* Кастомный скроллбар в палитре проекта */
+html{scrollbar-width:thin;scrollbar-color:#D9A441 #0b0b0d}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:#0b0b0d}
+::-webkit-scrollbar-thumb{background:#D9A441;border-radius:99px;border:2px solid #0b0b0d}
+::-webkit-scrollbar-thumb:hover{filter:brightness(.85)}
+</style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.92em' font-size='90'>⛰️</text></svg>">
+</head>
 	<body>
 		<div class="sidebar">
-			<h1 class="header">Workout Diary</h1>
+			<h1 class="header header--brand">
+      <svg class="brand-mark" viewBox="0 0 34 30" aria-hidden="true">
+        <path d="M3 27 L13 6 L19 17 L23 10 L31 27 Z" fill="none" stroke="#D9A441" stroke-width="2.4" stroke-linejoin="round"/>
+        <circle cx="17" cy="24" r="2.6" fill="#D9A441"/>
+      </svg>ATLAS</h1>
 
 			<ul class="workouts">
 				<form class="hidden form">
